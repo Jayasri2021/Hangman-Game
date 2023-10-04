@@ -1,3 +1,3 @@
-from Function import hangman
+from Function import hangman_game
 
-hangman()
+hangman_game()

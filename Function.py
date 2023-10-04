@@ -1,7 +1,7 @@
 import random
 
 
-def hangman():
+def hangman_game():
     list1 = ["python", "hangman", "computer", "programming", "gaming", "hello", "world"]
     sec_word = random.choice(list1)
     guessed = []

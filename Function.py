@@ -17,3 +17,11 @@ def hangman():
         if dis_word == sec_word:
             print("Congratulations! You guessed the word:", sec_word)
             return
+
+        print("Attempts left:", tries)
+        print("Guessed letters:", " ".join(guessed))
+
+        u_guess = input("Enter a letter: ").lower()
+        if not u_guess.isalpha() or len(u_guess) != 1:
+            print("Invalid input. Please enter a single letter.")
+            continue

@@ -25,3 +25,15 @@ def hangman():
         if not u_guess.isalpha() or len(u_guess) != 1:
             print("Invalid input. Please enter a single letter.")
             continue
+
+        if u_guess in guessed:
+            print("You already guessed that letter.")
+            continue
+
+        guessed.append(u_guess)
+
+        if u_guess not in sec_word:
+            tries -= 1
+            print("Wrong guess!")
+
+    print("Out of attempts! The secret word was:", sec_word)

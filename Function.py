@@ -6,3 +6,5 @@ def hangman():
     sec_word = random.choice(list1)
     guessed = []
     tries = 6
+    print("Welcome to Hangman game!")
+    print("Try to guess the secret word.")
